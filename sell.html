@@ -180,7 +180,7 @@
                   id="card"
                   name="card"
                   type="text"
-                  placeholder="Example: CZ-102 Charizard"
+                  placeholder="Example: TG23 Umbreon"
                 />
 
                 <label for="message">Notes</label>
@@ -213,15 +213,32 @@
     </footer>
 
     <script>
-      const contactForm = document.getElementById("contact-form");
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("form-status");
 
-      if (contactForm) {
-        contactForm.addEventListener("submit", (event) => {
-          event.preventDefault();
-          alert("Thanks for your message! I'll contact you soon.");
-          contactForm.reset();
-        });
-      }
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+
+        const data = new FormData(form);
+
+        const action =
+          "https://script.google.com/macros/s/AKfycbw1BPWkBjE_HL2kpfJl98V0AR2hm4WjFHlcPbW9Woi6ZBmXt-c8jEi4Qej1yF-zmK-J/exec";
+
+        fetch(action, {
+          method: "POST",
+          body: data,
+          mode: "no-cors",
+        })
+          .then(() => {
+            status.innerText = "Message sent successfully!";
+            form.reset();
+          })
+          .catch((error) => {
+            status.innerText = "Oops! There was a problem.";
+            console.error("Error:", error);
+          });
+      });
     </script>
   </body>
 </html>
