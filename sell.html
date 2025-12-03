@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carolina Cards | Buy & Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="sell-page">
+    <header class="site-header">
+      <div class="layout">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">CC</span>
+          <span>Carolina Cards</span>
+        </a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="cards.html">Cards</a>
+          <a href="sell.html" aria-current="page">Buy &amp; Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="layout hero-content">
+          <div>
+            <span class="eyebrow">Ready when you are</span>
+            <h1>How to purchase or ask a question</h1>
+            <p>
+              Send the card ID, I confirm it’s in my binder, and we move forward
+              once you like the photos. Straightforward and student-budget
+              friendly.
+            </p>
+            <div class="cta-row">
+              <a class="btn" href="#contact">Send a message</a>
+              <a class="btn secondary" href="cards.html">Browse cards</a>
+            </div>
+          </div>
+          <div class="note" role="note">
+            <strong>Payment methods</strong>
+            <ul class="list">
+              <li>PayPal Goods &amp; Services for buyer protection.</li>
+              <li>Venmo for local campus pickups.</li>
+              <li>Cash works for quick in-person trades.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-area">
+        <div class="layout grid-two">
+          <div>
+            <div class="section-head">
+              <h2>Purchase steps</h2>
+              <p>A quick overview of how we can complete a trade.</p>
+            </div>
+            <div class="steps">
+              <div class="step">
+                <strong>1. Claim a card</strong>
+                <p>
+                  Send the card name and ID so I can pull it from the binder and
+                  hold it for you.
+                </p>
+              </div>
+              <div class="step">
+                <strong>2. Photo confirmation</strong>
+                <p>
+                  I send front/back photos in bright light. You approve or ask
+                  for close-ups if needed.
+                </p>
+              </div>
+              <div class="step">
+                <strong>3. Payment + ship</strong>
+                <p>
+                  Once paid, I ship within two business days and share tracking
+                  right away.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="section-head">
+              <h2>Shipping options</h2>
+              <p>Pick what works best for your budget and timeline.</p>
+            </div>
+            <div class="media-strip">
+              <div class="media-item">
+                <strong>Stamped envelope</strong>
+                <span>$2 · Untracked</span>
+                <span class="pill">For low-value cards</span>
+              </div>
+              <div class="media-item">
+                <strong>First-Class</strong>
+                <span>$4 · Tracking included</span>
+                <span class="pill green">Default</span>
+              </div>
+              <div class="media-item">
+                <strong>Priority Mail</strong>
+                <span>$9 · Faster + insured</span>
+                <span class="pill blue">For $50+ orders</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-area">
+        <div class="layout grid-two">
+          <div>
+            <div class="section-head">
+              <h2>Condition breakdown</h2>
+              <p>
+                Short notes on how I label cards so you know what to expect.
+              </p>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Label</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gem Mint</td>
+                  <td>PSA 10. Considered to be a "perfect card".</td>
+                </tr>
+                <tr>
+                  <td>Near Mint</td>
+                  <td>
+                    Clean corners, centered, no scratches in bright light. Ideal
+                    for binder displays.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Light Play</td>
+                  <td>
+                    Minor whitening or faint scratches when tilted. Still
+                    sleeve-ready for play.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Moderate Play</td>
+                  <td>
+                    Noticeable edge wear or small crease. Great for budget decks
+                    and casual play.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="contact">
+            <div class="section-head">
+              <h2>Message me</h2>
+              <p>Include the card ID for faster replies.</p>
+            </div>
+            <div class="contact-panel">
+              <form id="contact-form" aria-label="Contact form">
+                <label for="name">Your name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Trainer Name"
+                  required
+                />
+
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                />
+
+                <label for="card">Card ID or name</label>
+                <input
+                  id="card"
+                  name="card"
+                  type="text"
+                  placeholder="Example: CZ-102 Charizard"
+                />
+
+                <label for="message">Notes</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Share questions about condition, shipping, or bundles."
+                ></textarea>
+
+                <button class="btn" type="submit">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="layout footer-grid">
+        <div>
+          <strong>Carolina Cards</strong>
+          <p class="meta">UNC students selling extra pulls.</p>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <p class="meta">Email: hello@carolinacards.test</p>
+          <p class="meta">Instagram: @carolinacards_unc</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const contactForm = document.getElementById("contact-form");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          alert("Thanks for your message! I'll contact you soon.");
+          contactForm.reset();
+        });
+      }
+    </script>
+  </body>
+</html>
